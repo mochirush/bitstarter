@@ -6,7 +6,14 @@ var fs = require('fs');
 
 var app = express();
 
-var index_contents = fs.readFileSync('index.html');
+var index_contents = fs.readFileSync('index.html', 'utf-8');
 
-console.log(index_contents);
+app.get('/', function(request, response) {
+ response.send(index_contents);
+});
+
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+ console.log("Listening on " + port);
+});
 
