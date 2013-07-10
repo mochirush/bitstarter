@@ -6,10 +6,10 @@ var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
-var index_contents = fs.readFileSync('index.html', 'utf-8');
+var index_contents = fs.readFileSync('index.html');
 
 app.get('/', function(request, response) {
- response.send(index_contents);
+ response.send(index_contents.toString());
 });
 
 var port = process.env.PORT || 5000;
