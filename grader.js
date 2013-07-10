@@ -25,10 +25,19 @@ var sys = require('util');
 var fs = require('fs');
 var program = require('commander');
 var cheerio = require('cheerio');
-var restler = require('restler');
+var rest = require('restler');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
-var URL_DEFAULT = "http://aqueous-journey-7597.herokuapp.com/";
+var URL_DEFAULT = "http://aqueous-journey-7597.herokuapp.com";
+
+rest.get('http://aqueous-journey-7597.herokuapp.com').on('complete', function(result) {
+  if (result instanceof Error) {
+    sys.puts('Error: ' + result.message);
+    this.retry(5000); // try again after 5 sec
+  } else {
+    sys.puts(result);
+  }
+});
 
 var assertFileExists = function(infile) {
     var instr = infile.toString();
