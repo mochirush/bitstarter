@@ -1,0 +1,53 @@
+body {
+padding: 60px 0px 40px 0px;
+}
+
+p, ul li {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.hero-unit {
+	background:url(../img/big-red-button.jpg) no-repeat right -53px;
+	padding:50px 60px 135px 60px;
+}
+
+.hero-unit p {
+	width:75%;
+}
+
+.statistics h3, .statistics p {
+    color: #fff;
+}
+
+.actions {
+	background-color: #343434;
+    padding: 3% 0;
+    height:303px;
+}
+
+.linediv-l {
+    border-right: 1px solid #fff;
+}
+
+.linediv-r {
+    border-left: 1px solid #fff;
+}
+
+.video, .thermometer, .order, .social, .statistics {
+    text-align: center;
+}
+
+.center {
+     float: none !important;
+     margin-left: auto !important;
+     margin-right: auto !important;
+}
+
+.custom-offset-none {
+	margin-left:0;
+}
+
+.custom-offset-45 {
+	margin-left:45px;
+}
