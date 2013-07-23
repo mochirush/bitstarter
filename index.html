@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- <link href="https://s3-us-west-2.amazonaws.com/monthlymeals/css/bootstrap.css" rel="stylesheet"/> -->
     <link href="https://s3-us-west-2.amazonaws.com/monthlymeals/css/bootstrap.css" rel="stylesheet"/>
     <link href="https://s3-us-west-2.amazonaws.com/monthlymeals/css/bootstrap-responsive.css" rel="stylesheet"/>
     <link href="https://s3-us-west-2.amazonaws.com/monthlymeals/css/global.css" rel="stylesheet"/>
@@ -23,8 +22,6 @@
       <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA3DklJSd1-bqUMrHbN8NEPNALHAWDwxE&sensor=true">
     </script>
-
-    
     <script type="text/javascript">
       function initialize() {
         var myLatlng = new google.maps.LatLng(37.7833260851793,-122.412383618295);
@@ -73,7 +70,6 @@
 
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -84,8 +80,8 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="about">About</a></li>
+                <li><a class="contact" href="#contact">Contact</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <!--<li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -119,7 +115,7 @@
             <div class="carousel-caption">
               <h1>Homeless, not hopeless.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+              <a class="btn btn-large btn-primary contact" href="#">Sign up today</a>
             </div>
           </div>
         </div>
@@ -127,8 +123,8 @@
           <img src="https://s3-us-west-2.amazonaws.com/monthlymeals/img/slide4.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>What do we do?</h1>
+              <p class="lead">We simply bridge the current technological gap between shelters, the needy and you the smart phone user.</p>
               <a class="btn btn-large btn-primary" href="#">How Does It Work?</a>
             </div>
           </div>
@@ -162,8 +158,8 @@
           <img class="img-circle" src="https://s3-us-west-2.amazonaws.com/monthlymeals/img/example1.jpg" alt="">
           <h2>Listen to a story</h2>
           <p>'I am not a bum, I am a human being'</p>
-          <p><a class="btn" id="myModalThumbnail" href="#">Hear this story &raquo;</a></p>
-          <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <p><a class="btn" id="myModalThumbnail" href="#">Hear Ronald's story &raquo;</a></p>
+          <div id="myModal" class="modal hide fade youtube" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
@@ -193,7 +189,7 @@
 
       <div class="featurette first">
         <div id="map-canvas" class"featurette-image pull-right"></div>
-        <h2 class="featurette-heading">Find someone locally to help now.<span class="muted">It'll blow your mind.</span></h2>
+        <h2 class="featurette-heading">Find someone locally to help now.<br/><span class="muted">It'll blow your mind.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         
       </div>
@@ -202,7 +198,7 @@
 
       <div class="featurette">
         <img class="featurette-image pull-left" src="http://twitter.github.io/bootstrap/assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Corporate Support<span class="muted">See for yourself.</span></h2>
+        <h2 class="featurette-heading">Corporate Support<br/><span class="muted">See for yourself.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
 
@@ -210,7 +206,7 @@
 
       <div class="featurette">
         <img class="featurette-image pull-right" src="http://twitter.github.io/bootstrap/assets/img/examples/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <h2 class="featurette-heading">And lastly, this one.<br/><span class="muted">Checkmate.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
 
@@ -222,7 +218,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Monthly Meals. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>  &middot; <a href="#">Contact</a></p>
+        <p>&copy; 2013 Monthly Meals. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>  &middot; <a href="#" class="contact">Contact</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -253,15 +249,45 @@
     </script>
     <script type="text/javascript">
       $('#myModalThumbnail').click(function () {
-          var src = 'http://www.youtube-nocookie.com/embed/qnWpDPO5B88?rel=0&amp;autohide=1&amp;showinfo=0&amp;autoplay=1#t=05s';
-          $('#myModal').modal('show');
+          var src = 'http://www.youtube-nocookie.com/embed/qnWpDPO5B88?rel=0&amp;autohide=1&amp;showinfo=0&amp;autoplay=1';
+          $('#myModal.youtube').modal('show');
           $('#myModal iframe').attr('src', src);
       });
 
       $('#myModal button').click(function () {
           $('#myModal iframe').removeAttr('src');
       });
+
+      $(".contact").click(function(){
+        $('#myModal.contact').modal('show');
+      });
 </script>
-    <script src="https://s3-us-west-2.amazonaws.com/monthlymeals/js/holder.js"></script>
+
+    <div id="myModal" class="modal hide fade contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <form class="well span8">
+        <div class="row">
+          <div class="span3">
+            <label>First Name</label>
+            <input type="text" class="span3" placeholder="Your First Name">
+            <label>Last Name</label>
+            <input type="text" class="span3" placeholder="Your Last Name">
+            <label>Email Address</label>
+            <input type="text" class="span3" placeholder="Your email address">
+            <label>Subject</label>
+            <select id="subject" name="subject" class="span3">
+              <option value="na" selected="">Choose One:</option>
+              <option value="service">General Customer Service</option>
+              <option value="suggestions">Suggestions</option>
+              <option value="product">Product Support</option>
+            </select>
+        </div>
+        <div class="span5">
+          <label>Message</label>
+          <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary pull-right">Send</button>
+      </div>
+      </form>
+    </div>
   </body>
 </html>
