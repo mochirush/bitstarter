@@ -9,7 +9,7 @@
     <!-- <link href="https://s3-us-west-2.amazonaws.com/monthlymeals/css/bootstrap.css" rel="stylesheet"/> -->
     <link href="https://s3-us-west-2.amazonaws.com/monthlymeals/css/bootstrap.css" rel="stylesheet"/>
     <link href="https://s3-us-west-2.amazonaws.com/monthlymeals/css/bootstrap-responsive.css" rel="stylesheet"/>
-    <link href="css/global.css" rel="stylesheet"/>
+    <link href="https://s3-us-west-2.amazonaws.com/monthlymeals`/css/global.css" rel="stylesheet"/>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="https://s3-us-west-2.amazonaws.com/monthlymeals/js/html5shiv.js"></script>
@@ -19,49 +19,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://s3-us-west-2.amazonaws.com/monthlymeals/img/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://s3-us-west-2.amazonaws.com/monthlymeals/img/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="https://s3-us-west-2.amazonaws.com/monthlymeals/img/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="img/Favicon.png">
-      <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA3DklJSd1-bqUMrHbN8NEPNALHAWDwxE&sensor=true">
-    </script>
-
-    
-    <script type="text/javascript">
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(37.7833260851793,-122.412383618295);
-        var mapOptions = {
-          zoom: 14,
-          center: myLatlng,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-
-        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-        var popup = new google.maps.InfoWindow({
-          content:'<p id="hook">Hello World!</p>'
-      });
-
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            title: 'San Francisco Rescue Mission'
-        });
-
-        google.maps.event.addListener(popup, 'domready', function() {
-          var l = $('#hook').parent().parent().parent().siblings();
-          for (var i = 0; i < l.length; i++) {
-              if($(l[i]).css('z-index') == 'auto') {
-                  $(l[i]).css('border-radius', '16px 16px 16px 16px');
-                  $(l[i]).css('border', '2px solid red');
-              }
-          }
-      });
-      }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-      </script>
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-  <body id="home">
+  <body>
 
 
 
@@ -87,7 +48,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-                <!--<li class="dropdown">
+                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
@@ -98,7 +59,7 @@
                     <li><a href="#">Separated link</a></li>
                     <li><a href="#">One more separated link</a></li>
                   </ul>
-                </li>-->
+                </li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -114,32 +75,32 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="img/slide1.jpg" alt="">
+          <img src="https://s3-us-west-2.amazonaws.com/monthlymeals/img/slide-01.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Homeless, not hopeless.</h1>
+              <h1>Example headline.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <a class="btn btn-large btn-primary" href="#">Sign up today</a>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="img/slide4.jpg" alt="">
+          <img src="https://s3-us-west-2.amazonaws.com/monthlymeals/img/slide-02.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">How Does It Work?</a>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="img/slide3.jpg" alt="">
+          <img src="https://s3-us-west-2.amazonaws.com/monthlymeals/img/slide-03.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
             </div>
           </div>
         </div>
@@ -159,28 +120,20 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span4">
-          <img class="img-circle" src="img/example1.jpg" alt="">
-          <h2>Listen to a story</h2>
-          <p>'I am not a bum, I am a human being'</p>
-          <p><a class="btn" id="myModalThumbnail" href="#">Hear this story &raquo;</a></p>
-          <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
-            <div class="modal-body">
-              <iframe width="520" height="390" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-          </div>
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" src="img/example2.jpg" alt="">
-          <h2>Share a laugh</h2>
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" src="img/example3.jpg" alt="">
-          <h2>Be the change</h2>
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
@@ -191,25 +144,24 @@
 
       <hr class="featurette-divider">
 
-      <div class="featurette first">
-        <div id="map-canvas" class"featurette-image pull-right"></div>
-        <h2 class="featurette-heading">Find someone locally to help now.<span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        
-      </div>
-
-      <hr class="featurette-divider">
-
       <div class="featurette">
-        <img class="featurette-image pull-left" src="http://twitter.github.io/bootstrap/assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Corporate Support<span class="muted">See for yourself.</span></h2>
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="http://twitter.github.io/bootstrap/assets/img/examples/browser-icon-safari.png">
+        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
@@ -222,10 +174,12 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Monthly Meals. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>  &middot; <a href="#">Contact</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
+
+
 
     <!-- Le javascript
     ================================================== -->
@@ -251,17 +205,6 @@
         })
       }(window.jQuery)
     </script>
-    <script type="text/javascript">
-      $('#myModalThumbnail').click(function () {
-          var src = 'http://www.youtube-nocookie.com/embed/qnWpDPO5B88?rel=0&amp;autohide=1&amp;showinfo=0&amp;autoplay=1#t=05s';
-          $('#myModal').modal('show');
-          $('#myModal iframe').attr('src', src);
-      });
-
-      $('#myModal button').click(function () {
-          $('#myModal iframe').removeAttr('src');
-      });
-</script>
     <script src="https://s3-us-west-2.amazonaws.com/monthlymeals/js/holder.js"></script>
   </body>
 </html>
