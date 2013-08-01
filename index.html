@@ -19,7 +19,20 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://s3-us-west-2.amazonaws.com/monthlymeals/img/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="https://s3-us-west-2.amazonaws.com/monthlymeals/img/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/monthlymeals/img/Favicon.png">
-      <script type="text/javascript"
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-42892875-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA3DklJSd1-bqUMrHbN8NEPNALHAWDwxE&sensor=true">
     </script>
     <script type="text/javascript">
@@ -59,8 +72,6 @@
   </head>
 
   <body id="home">
-
-
 
     <!-- NAVBAR
     ================================================== -->
@@ -214,6 +225,19 @@
 
       <!-- /END THE FEATURETTES -->
 
+      <!-- AddThis Button BEGIN -->
+      <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+      <a class="addthis_button_preferred_1"></a>
+      <a class="addthis_button_preferred_2"></a>
+      <a class="addthis_button_preferred_3"></a>
+      <a class="addthis_button_preferred_4"></a>
+      <a class="addthis_button_compact"></a>
+      <a class="addthis_counter addthis_bubble_style"></a>
+      </div>
+      <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fad6a37b3ed801"></script>
+      <!-- AddThis Button END -->
+
 
       <!-- FOOTER -->
       <footer>
@@ -289,5 +313,15 @@
       </div>
       </form>
     </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42892875-1', 'herokuapp.com');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
