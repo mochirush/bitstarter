@@ -289,7 +289,6 @@ html body#home div.container div.featurette iframe.featurette-image {
 
 .contribute {
   padding-top:0px;
-  width:583px;
 }
 
 /* Re-align Modal Box */
@@ -309,7 +308,6 @@ html body#home div.container div.featurette iframe.featurette-image {
   background-color:#343434;
   color:#fff;
   text-align: center;
-  width:50%;
   height:273px;
   padding-top:20px;
   margin-bottom:15px;
