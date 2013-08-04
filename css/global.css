@@ -340,11 +340,19 @@ html body#home div.container div.featurette iframe.featurette-image {
   margin:0 auto;
 }
 
+/* Donate By BitCoin */
+
+.bitcoin-payment {
+  margin:20px 0px 0px 20px;
+}
+
 /* Add This Buttons */
 
 .addthis_toolbox {
   clear:both;
-  padding-bottom:20px;
+  padding-top:20px;
+  margin:0 auto;
+  width:250px;
 }
 
 /* Footer */
