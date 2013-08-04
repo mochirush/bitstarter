@@ -310,6 +310,7 @@ html body#home div.container div.featurette iframe.featurette-image {
   color:#fff;
   text-align: center;
   width:585px;
+  height:200px;
 }
 
 
@@ -319,6 +320,31 @@ html body#home div.container div.featurette iframe.featurette-image {
 
 .linediv-r {
     border-left: 1px solid #fff;
+}
+
+.figures-wrapper {
+  margin: 0 auto;
+  width:464px;
+  height:110px;
+}
+
+.figures {
+  float:left;
+  padding:0px 40px 0px 40px;
+  font-size: 19px;
+}
+
+.thermometer {
+  clear:both;
+  width:500px;
+  margin:0 auto;
+}
+
+/* Add This Buttons */
+
+.addthis_toolbox {
+  clear:both;
+  padding-bottom:20px;
 }
 
 /* Footer */
