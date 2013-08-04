@@ -310,7 +310,9 @@ html body#home div.container div.featurette iframe.featurette-image {
   color:#fff;
   text-align: center;
   width:585px;
-  height:200px;
+  height:273px;
+  padding-top:20px;
+  margin-bottom:15px;
 }
 
 
