@@ -7,7 +7,13 @@
       color: #5a5a5a;
     }
 
+    .left {
+      float:left;
+    }
 
+    .right {
+      float:right;
+    }
 
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
@@ -245,13 +251,10 @@
 
 /* Google Map */
 
-#map-canvas {
+html body#home div.container div.featurette iframe.featurette-image {
   float:right;
   width:512px;
-  height:512px;
 }
-
-
 /* Youtube Clip */
 
 #myModal {
@@ -280,4 +283,46 @@
 
 #google-map-content {
   background-color:grey;
+}
+
+/* Contribute */
+
+.contribute {
+  padding-top:0px;
+  width:583px;
+}
+
+/* Re-align Modal Box */
+
+.modal {
+  margin-left:-404px;
+}
+
+/* Progress Box */
+
+.video, .thermometer, .order, .social, .statistics {
+  text-align:center;
+}
+
+.progress-box {
+  float:right;
+  background-color:#343434;
+  color:#fff;
+  text-align: center;
+  width:585px;
+}
+
+
+.linediv-l {
+    border-right: 1px solid #fff;
+}
+
+.linediv-r {
+    border-left: 1px solid #fff;
+}
+
+/* Footer */
+
+footer {
+  clear:both;
 }
