@@ -309,7 +309,7 @@ html body#home div.container div.featurette iframe.featurette-image {
   background-color:#343434;
   color:#fff;
   text-align: center;
-  width:585px;
+  width:50%;
   height:273px;
   padding-top:20px;
   margin-bottom:15px;
@@ -332,13 +332,13 @@ html body#home div.container div.featurette iframe.featurette-image {
 
 .figures {
   float:left;
-  padding:0px 40px 0px 40px;
+  width:33%;
   font-size: 19px;
 }
 
 .thermometer {
   clear:both;
-  width:500px;
+  width:85%;
   margin:0 auto;
 }
 
